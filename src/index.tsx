@@ -584,7 +584,7 @@ export class Controlled extends React.Component<IControlledCodeMirror, any> {
     let preserved: IPreservedOptions = {cursor: null};
 
     if (nextProps.value !== this.props.value) {
-      this.hydrated = false;
+      this.hydrated = true;
     }
 
     if (!this.props.autoCursor && this.props.autoCursor !== undefined) {

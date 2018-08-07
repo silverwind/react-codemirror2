@@ -449,7 +449,7 @@ var Controlled = function(_super) {
       cursor: null
     };
     if (nextProps.value !== this.props.value) {
-      this.hydrated = false;
+      this.hydrated = true;
     }
     if (!this.props.autoCursor && this.props.autoCursor !== undefined) {
       preserved.cursor = this.editor.getCursor();
